@@ -1,31 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"></RelativeLayout>
+        android:layout_weight="1">
 
-    <TableLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123412341241"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TableRow>
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/add"
+            app:layout_row="1"
+            app:layout_column="1"
+            android:text="+" />
 
-        </TableRow>
 
-        <TableRow></TableRow>
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-" />
 
-        <TableRow></TableRow>
+        <Button
+            android:id="@+id/mul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*" />
 
-        <TableRow></TableRow>
+        <Button
+            android:id="@+id/div"
+            android:layout_width="wrap_content"
+            android:text="/" />
 
-        <TableRow></TableRow>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="2"
+            app:layout_column="1"
+            android:text="@string/digit_one" />
 
-    </TableLayout>
+        <Button
+            android:id="@+id/two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="3"
+            app:layout_column="1"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/eq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_rowSpan="2"
+            app:layout_gravity="fill_vertical"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="4"
+            app:layout_column="1"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_row="5"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/double_zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_columnSpan="2"
+            app:layout_gravity="fill_horizontal"
+            android:text="00"/>
+    </android.support.v7.widget.GridLayout>
+
 
 </LinearLayout>
